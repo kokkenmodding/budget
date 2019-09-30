@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Squada+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 style="text-align: center;color: white;">~ BUDGET WHEEL ~</h1>
+<div class="container">
+    <div class="kortet1">
+
+            <h2>Budget</h1>
+        <div style="width: 280px;margin: auto;">
+            <table style="margin-bottom: 20px;text-align: right;margin-left: 25px;">
+                    <tr>
+                            <th>
+                                Budget
+                            </th>
+                            <th>
+                                    <input id="budget" type='text'/>
+                            </th>
+                        </tr>
+                <tr>
+                    <th>
+                        Start Date
+                    </th>
+                    <th>
+                            <input type='text' id="startdate" class="datepicker-here" data-position="right top" data-language='en' />
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        End Date
+                    </th>
+                    <th>
+                        <input type='text' id="enddate" class="datepicker-here" data-position="right top" data-language='en' />
+                    </th>
+                </tr>
+            </table>
+<br>
+            <hr style="width: 90%;">
+            <h2>Pacing</h2>
+            <table style="margin-bottom: 20px;text-align: right;">
+                    <tr>
+                            <th>
+                                Current spend
+                            </th>
+                            <th>
+                                    <input id="currentspe" type='text'/>
+                            </th>
+                        </tr>
+                <tr>
+                    <th>
+                        Current Date
+                    </th>
+                    <th>
+                            <input type='text' id="cdate" class="datepicker-here" data-position="right top" data-language='en' />
+                    </th>
+                </tr>
+                
+            </table><br>
+            <hr style="width: 90%;"><br>
+            <button style="width: 250px;height: 30px;margin-bottom: 20px;border-radius: 5px" onclick="minfunction()">Calculate</button>
+        </div>
+    </div>
+
+    <div class="kortet1"><h2>Budget Output</h1>
+        <table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
+                <tr>
+                        <th style="text-align: right;">
+                            Number of days
+                        </th>
+                        <th id="numberdays" style="color: #079992;">
+                                ...
+                        </th>
+                    </tr>
+            <tr>
+                <th style="text-align: right;">
+                    Daily budget
+                </th>
+                <th id="dagligbudget" style="color: #079992;">
+                        ...
+                </th>
+            </tr>
+            
+        </table>
+        <hr style="width: 90%;">
+            <h2>Pacing Output</h2>
+            <table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
+                    <tr>
+                            <th style="text-align: right;">
+                                Target spend
+                            </th>
+                            <th id="tspend" style="color: #079992;">
+                                    ...
+                            </th>
+                        </tr>
+                <tr>
+                    <th style="text-align: right;">
+                        Pacing (%)
+                    </th>
+                    <th id="pacing" style="color: #079992;">
+                            ...
+                    </th>
+                </tr>
+                <tr>
+                        <th style="text-align: right;">
+                            Average daily spend
+                        </th>
+                        <th id="ads" style="color: #079992;">
+                                ...
+                        </th>
+                    </tr>
+                    <tr>
+                            <th style="text-align: right;">
+                                New daily spend
+                            </th>
+                            <th id="nds" style="color: #079992;">
+                                    ...
+                            </th>
+                        </tr>
+                
+            </table>
+            
+    </div>
+
+    
+
+</div>   
+    
+<script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="dist/js/datepicker.min.js"></script>
+    <!-- Include English language -->
+    <script src="dist/js/i18n/datepicker.en.js"></script>
+
+    
+
+</body>
+</html>

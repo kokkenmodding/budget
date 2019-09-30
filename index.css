@@ -1,0 +1,36 @@
+h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 4em;
+    font-weight: 1;
+}
+h2 {
+    font-family: 'Squada One', cursive;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #222f3e;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.kortet1 {
+    margin: 5px;
+    background-color: white;
+    width: 300px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 20px;
+}
+.kortet2 {
+    margin: 5px;
+    background-color: white;
+    width: 500px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 20px;
+}
