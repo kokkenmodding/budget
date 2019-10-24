@@ -21,7 +21,7 @@ body {
 .kortet1 {
     margin: 5px;
     background-color: white;
-    width: 300px;
+    width: 400px;
     padding: 3px;
     text-align: center;
     border-radius: 20px;
@@ -33,4 +33,8 @@ body {
     padding: 3px;
     text-align: center;
     border-radius: 20px;
+}
+input[type=text] {
+    height: 1.5em;
+
 }

@@ -43,6 +43,7 @@ function minfunction () {
  // To calculate the no. of days between two dates 
  var Difference_In_Days2 = (Difference_In_Time2 / (1000 * 3600 * 24))+1;
 
+
 var targetspend = budgeten*Difference_In_Days2;
 document.getElementById("tspend").innerHTML=targetspend.toFixed(2);
 
@@ -50,8 +51,11 @@ var pacingen = document.getElementById("currentspe").value/targetspend;
 var ads = document.getElementById("currentspe").value/Difference_In_Days2;
 var nds = (budgeten - document.getElementById("currentspe").value) / (Difference_In_Days-Difference_In_Days2);
 
-document.getElementById("pacing").innerHTML = pacingen.toFixed(2);
+document.getElementById("pacing").innerHTML = (pacingen.toFixed(2)*100)+"%";
 document.getElementById("ads").innerHTML=ads.toFixed(2);
 document.getElementById("nds").innerHTML=nds.toFixed(2);
+
+document.getElementById("dpassed").innerHTML=Difference_In_Days2;
+document.getElementById("dremaining").innerHTML=(Difference_In_Days-Difference_In_Days2);
 }
 

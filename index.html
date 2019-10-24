@@ -24,7 +24,7 @@
                                 Budget
                             </th>
                             <th>
-                                    <input id="budget" type='text'/>
+                                    <input id="budget" style="background-image: url(money.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" type='text'/>
                             </th>
                         </tr>
                 <tr>
@@ -32,7 +32,7 @@
                         Start Date
                     </th>
                     <th>
-                            <input type='text' id="startdate" class="datepicker-here" data-position="right top" data-language='en' />
+                            <input type='text' style="background-image: url(date.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" id="startdate" class="datepicker-here" data-position="right top" data-language='en' />
                     </th>
                 </tr>
                 <tr>
@@ -40,11 +40,33 @@
                         End Date
                     </th>
                     <th>
-                        <input type='text' id="enddate" class="datepicker-here" data-position="right top" data-language='en' />
+                        <input type='text' style="background-image: url(date.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" id="enddate" class="datepicker-here" data-position="right top" data-language='en' />
                     </th>
                 </tr>
             </table>
 <br>
+<hr style="width: 90%;"><br>
+<table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
+        <tr>
+                <th style="text-align: right;">
+                    Number of days
+                </th>
+                <th></th>
+                <th id="numberdays" style="color: #079992;">
+                        ...
+                </th>
+            </tr>
+    <tr>
+        <th style="text-align: right;">
+            Daily budget
+        </th>
+        <th></th>
+        <th id="dagligbudget" style="color: #079992;">
+                ...
+        </th>
+    </tr>
+    
+</table>
             <hr style="width: 90%;">
             <h2>Pacing</h2>
             <table style="margin-bottom: 20px;text-align: right;">
@@ -53,7 +75,7 @@
                                 Current spend
                             </th>
                             <th>
-                                    <input id="currentspe" type='text'/>
+                                    <input id="currentspe" style="background-image: url(money.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" type='text'/>
                             </th>
                         </tr>
                 <tr>
@@ -61,76 +83,76 @@
                         Current Date
                     </th>
                     <th>
-                            <input type='text' id="cdate" class="datepicker-here" data-position="right top" data-language='en' />
+                            <input type='text' style="background-image: url(date.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" id="cdate" class="datepicker-here" data-position="right top" data-language='en' />
                     </th>
                 </tr>
                 
             </table><br>
             <hr style="width: 90%;"><br>
-            <button style="width: 250px;height: 30px;margin-bottom: 20px;border-radius: 5px" onclick="minfunction()">Calculate</button>
-        </div>
-    </div>
 
-    <div class="kortet1"><h2>Budget Output</h1>
-        <table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
-                <tr>
+            <table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
+                    <tr>
                         <th style="text-align: right;">
-                            Number of days
+                                Target spend
                         </th>
-                        <th id="numberdays" style="color: #079992;">
+                        <th></th>
+                        <th id="tspend" style="color: #079992;">
+                                    ...
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">
+                            Pacing (%)
+                        </th>
+                        <th></th>
+                        <th id="pacing" style="color: #079992;">
                                 ...
                         </th>
                     </tr>
-            <tr>
-                <th style="text-align: right;">
-                    Daily budget
-                </th>
-                <th id="dagligbudget" style="color: #079992;">
-                        ...
-                </th>
-            </tr>
-            
-        </table>
-        <hr style="width: 90%;">
-            <h2>Pacing Output</h2>
-            <table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
+                    <tr><th>&nbsp;</th></tr>
                     <tr>
-                            <th style="text-align: right;">
-                                Target spend
-                            </th>
-                            <th id="tspend" style="color: #079992;">
-                                    ...
-                            </th>
-                        </tr>
-                <tr>
-                    <th style="text-align: right;">
-                        Pacing (%)
-                    </th>
-                    <th id="pacing" style="color: #079992;">
+                        <th style="text-align: right;">
+                            Days passed
+                        </th>
+                        <th></th>
+                        <th id="dpassed" style="color: #079992;">
                             ...
-                    </th>
-                </tr>
-                <tr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">
+                            Days remaining
+                        </th>
+                        <th></th>
+                        <th id="dremaining" style="color: #079992;">
+                            ...
+                        </th>
+                    </tr>
+                    <tr><th>&nbsp;</th></tr>
+                    <tr>
                         <th style="text-align: right;">
                             Average daily spend
                         </th>
+                        <th></th>
                         <th id="ads" style="color: #079992;">
                                 ...
                         </th>
                     </tr>
                     <tr>
-                            <th style="text-align: right;">
+                        <th style="text-align: right;">
                                 New daily spend
-                            </th>
-                            <th id="nds" style="color: #079992;">
+                        </th>
+                        <th></th>
+                        <th id="nds" style="color: #079992;">
                                     ...
-                            </th>
-                        </tr>
+                        </th>
+                    </tr>
                 
             </table>
-            
+            <hr style="width: 90%;"><br>
+            <button style="width: 250px;height: 30px;margin-bottom: 20px;border-radius: 5px;background-color: #ff7675;font-size: 2em;color: white;height: 50px;font-family: squada one;font-weight: 100" onclick="minfunction()">CALCULATE</button>
+        </div>
     </div>
-
     
 
 </div>   
