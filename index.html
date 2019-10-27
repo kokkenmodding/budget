@@ -16,7 +16,8 @@
 <div class="container">
     <div class="kortet1">
 
-            <h2>Budget X</h1>
+            <h2>Budget</h1>
+
         <div style="width: 280px;margin: auto;">
             <table style="margin-bottom: 20px;text-align: right;margin-left: 25px;">
                     <tr>
@@ -27,6 +28,10 @@
                                     <input id="budget" style="background-image: url(money.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" type='text'/>
                             </th>
                         </tr>
+                        <tr>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
                 <tr>
                     <th>
                         Start Date
@@ -43,9 +48,22 @@
                         <input type='text' style="background-image: url(date.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" id="enddate" class="datepicker-here" data-position="right top" data-language='en' />
                     </th>
                 </tr>
+                <tr>
+                        <th></th>
+                        <th>
+                                <button style="width: 100%;height: 2em" onclick="minfunktion4()">This month</button> 
+                        </th>
+                    </tr>
+                    <tr>
+                            <th></th>
+                            <th>
+                                    <button style="width: 100%;height: 2em" onclick="minfunktion5()">Next month</button> 
+                            </th>
+                        </tr>
             </table>
 <br>
 <hr style="width: 90%;"><br>
+
 <table style="margin-bottom: 40px;text-align: left;margin-left: 20px;">
         <tr>
                 <th style="text-align: right;">
@@ -65,12 +83,16 @@
                 ...
         </th>
     </tr>
-    
+
 </table>
             <hr style="width: 90%;">
             <h2>Pacing</h2>
+
+            
             <table style="margin-bottom: 20px;text-align: right;">
-                    <tr>
+
+                
+                        <tr>
                             <th>
                                 Current spend
                             </th>
@@ -78,6 +100,10 @@
                                     <input id="currentspe" style="background-image: url(money.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" type='text'/>
                             </th>
                         </tr>
+                        <tr>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
                 <tr>
                     <th>
                         Current Date
@@ -85,7 +111,20 @@
                     <th>
                             <input type='text' style="background-image: url(date.png);background-position: right top;background-repeat: no-repeat;background-size: contain;" id="cdate" class="datepicker-here" data-position="right top" data-language='en' />
                     </th>
+
                 </tr>
+                <tr>
+                    <th></th>
+                    <th>
+                            <button style="width: 100%;height: 2em" onclick="minfunktion2()">Today</button> 
+                    </th>
+                </tr>
+                <tr>
+                        <th></th>
+                        <th>
+                                <button style="width: 100%;height: 2em"  onclick="minfunktion3()">Yesterday</button>
+                        </th>
+                    </tr>
                 
             </table><br>
             <hr style="width: 90%;"><br>
@@ -108,6 +147,16 @@
                         <th id="pacing" style="color: #079992;">
                                 ...
                         </th>
+                    </tr>
+                    <tr><th>&nbsp;</th></tr>
+                    <tr>
+                            <th style="text-align: right;">
+                                    Budget remaining
+                                </th>
+                                <th></th>
+                                <th id="budrem" style="color: #079992;">
+                                        ...
+                                </th>
                     </tr>
                     <tr><th>&nbsp;</th></tr>
                     <tr>
